@@ -1,8 +1,8 @@
-**Student:** **Ngankeu Takou Daniel Wilfried**
+# Student: Ngankeu Takou Daniel Wilfried
 
-**Matricule:** **24G2678**
+# Matricule: 24G2678
 
-**Course:** **INF231**
+# Course: INF231
 
 **Assignment:** Exercices 4 et 5 
 **Date:** 24/09/2025 
