@@ -177,14 +177,16 @@ Je compare arr[i] avec arr[i+1], donc i doit aller jusqu'à size-2 maximum pour 
 
 ### Optimisation possible
 Ma solution est déjà optimale en temps pour le pire cas O(n), car il faut au minimum vérifier tous les éléments adjacents dans le cas d'un tableau trié.
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-**TP No.2 du 25/09/2025**
+# TP No.2 du 25/09/2025
 
-**Theme:** **Ecrire des fonctions qui permettront d'effctuer des operations sur les listes chaines simples, doubles et circulaires**
+# Theme: Ecrire des fonctions qui permettront d'effctuer des operations sur les listes chaines simples, doubles et circulaires**
 
-  # Exercices INF 231 - Listes Chaînées en C -- Seance TP No.2 -- TP du 25/09/2025
+# Exercices INF 231 - Listes Chaînées en C -- Seance TP No.2 -- TP du 25/09/2025
 
 ## Documentation-Complete
 
