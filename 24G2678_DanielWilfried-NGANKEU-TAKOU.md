@@ -1,5 +1,3 @@
-Practical Work INF231 – 9 Exercises
-
 **Student:** **Ngankeu Takou Daniel Wilfried**
 
 **Matricule:** **24G2678**
@@ -183,8 +181,10 @@ Ma solution est déjà optimale en temps pour le pire cas O(n), car il faut au m
 
 
 **TP No.2 du 25/09/2025**
+
 **Theme:** **Ecrire des fonctions qui permettront d'effctuer des operations sur les listes chaines simples, doubles et circulaires**
-# Exercices INF 231 - Listes Chaînées en C
+
+  # Exercices INF 231 - Listes Chaînées en C -- Seance TP No.2 -- TP du 25/09/2025
 
 ## Documentation-Complete
 
