@@ -101,3 +101,81 @@ FIN
 ## Conclusion
 
 Ces deux algorithmes démontrent la manipulation des structures de données matricielles en langage C. Leur complexité est proportionnelle à la taille des données, ce qui garantit une efficacité raisonnable. Ils servent de base pour des traitements plus avancés : produit matrice × matrice, inversion ou opérations sur matrices dynamiques.
+### 1. Problème
+
+On dispose d’une liste simplement chaînée d’entiers. On souhaite écrire un algorithme qui permet de lire un élément donné par l’utilisateur et de supprimer **toutes les occurrences** de cet élément dans la liste, puis d’afficher la liste mise à jour.
+
+---
+
+### 2. Principe
+
+L’algorithme parcourt la liste du début à la fin. À chaque nœud rencontré :
+
+* Si la valeur stockée est différente de l’élément recherché, on passe au suivant.
+* Si la valeur est égale à l’élément recherché, le nœud est supprimé et les pointeurs sont réajustés.
+* On continue jusqu’à atteindre la fin de la liste.
+
+Ce principe garantit que toutes les occurrences sont éliminées, même si elles apparaissent en tête, au milieu ou en queue.
+
+---
+
+### 3. Dictionnaire de données
+
+| Nom de variable | Type                 | Rôle                                                                   |
+| --------------- | -------------------- | ---------------------------------------------------------------------- |
+| `head`          | Pointeur vers `Node` | Tête de la liste simplement chaînée                                    |
+| `Node`          | Structure            | Élément de la liste contenant un entier et un pointeur vers le suivant |
+| `data`          | `int`                | Valeur contenue dans un nœud                                           |
+| `next`          | Pointeur vers `Node` | Pointeur vers l’élément suivant                                        |
+| `target`        | `int`                | Élément à supprimer dans la liste                                      |
+| `temp`          | Pointeur vers `Node` | Parcourt la liste                                                      |
+| `prev`          | Pointeur vers `Node` | Garde en mémoire l’élément précédent pour réajuster les liens          |
+| `toDelete`      | Pointeur vers `Node` | Stocke temporairement un élément supprimé                              |
+
+---
+
+### 4. Algorithme et éléments
+
+**Algorithme : SuppressionOccurrences(L, x)**
+
+**Entrées :**
+
+* Une liste simplement chaînée `L`
+* Un entier `x` à supprimer
+
+**Sortie :**
+
+* La liste `L` mise à jour sans aucune occurrence de `x`
+
+**Étapes :**
+
+1. Initialiser `temp ← head` et `prev ← NULL`
+2. Tant que `temp ≠ NULL` faire
+   a. Si `temp.data = x` alors
+
+   * Sauvegarder `toDelete ← temp`
+   * Si `prev = NULL` alors `head ← temp.next` (cas suppression en tête)
+   * Sinon `prev.next ← temp.next`
+   * Avancer `temp ← temp.next`
+   * Libérer `toDelete`
+     b. Sinon
+   * Avancer `prev ← temp` et `temp ← temp.next`
+3. Retourner la liste `head`
+
+---
+
+### 5. Analyse de complexité
+
+* **Complexité temporelle :**
+
+  * L’algorithme parcourt chaque élément de la liste une seule fois.
+  * Chaque suppression est effectuée en temps constant (réajustement de pointeurs).
+  * Donc **O(n)** où *n* est la taille de la liste.
+
+* **Complexité spatiale :**
+
+  * Utilise un nombre constant de pointeurs auxiliaires (`prev`, `temp`, `toDelete`).
+  * Donc **O(1)**.
+
+---
+
