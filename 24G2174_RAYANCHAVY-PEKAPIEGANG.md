@@ -103,7 +103,7 @@ FIN
 Ces deux algorithmes démontrent la manipulation des structures de données matricielles en langage C. Leur complexité est proportionnelle à la taille des données, ce qui garantit une efficacité raisonnable. Ils servent de base pour des traitements plus avancés : produit matrice × matrice, inversion ou opérations sur matrices dynamiques.
 
 
-#TP 2: Exercice sur les listes Chaines
+# TP 2: Exercice sur les listes Chaines
 
 ### 1. Problème
 
@@ -182,5 +182,6 @@ Ce principe garantit que toutes les occurrences sont éliminées, même si elles
   * Donc **O(1)**.
 
 ---
+
 
 
